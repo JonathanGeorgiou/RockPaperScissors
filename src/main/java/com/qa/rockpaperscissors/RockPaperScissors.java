@@ -15,7 +15,7 @@ public class RockPaperScissors {
 			return "User Wins";
 		}
 		if (computerChoice.equals(userChoice)) {
-			return "Draw";
+			return "its a draw";
 		} else {
 			return "Computer Wins";
 		}

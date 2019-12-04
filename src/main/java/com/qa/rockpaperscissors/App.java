@@ -6,8 +6,9 @@ public class App {
 
 		RockPaperScissors game = new RockPaperScissors();
 		State comp = game.randComputerChoice();
-		State user = State.ROCK;
-		System.out.println("Computer: " + comp + " " + "User: " + user + " " + "Therefore " + game.play(comp, user));
+		State user = State.PAPER;
+		System.out.println(
+				"Computer picked " + comp + " " + "and user picked " + user + " " + "so " + game.play(comp, user));
 
 	}
 
