@@ -15,6 +15,9 @@ public class PlayTest {
 		String result4 = game.play(State.PAPER, State.ROCK);
 		String result5 = game.play(State.SCISSORS, State.ROCK);
 		String result6 = game.play(State.SCISSORS, State.PAPER);
+		String result7 = game.play(State.ROCK, State.ROCK);
+		String result8 = game.play(State.PAPER, State.PAPER);
+		String result9 = game.play(State.SCISSORS, State.SCISSORS);
 
 		Assert.assertEquals("Computer Wins", result1);
 		Assert.assertEquals("User Wins", result2);
@@ -22,6 +25,9 @@ public class PlayTest {
 		Assert.assertEquals("Computer Wins", result4);
 		Assert.assertEquals("User Wins", result5);
 		Assert.assertEquals("Computer Wins", result6);
+		Assert.assertEquals("Draw", result7);
+		Assert.assertEquals("Draw", result8);
+		Assert.assertEquals("Draw", result9);
 
 	}
 
