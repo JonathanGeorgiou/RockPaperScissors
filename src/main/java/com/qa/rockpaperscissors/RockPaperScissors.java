@@ -1,5 +1,7 @@
 package com.qa.rockpaperscissors;
 
+import java.util.Random;
+
 public class RockPaperScissors {
 
 	public String play(State computerChoice, State userChoice) {
@@ -18,6 +20,11 @@ public class RockPaperScissors {
 			return "Computer Wins";
 		}
 
+	}
+
+	public State randComputerChoice() {
+		int pick = new Random().nextInt(State.values().length);
+		return State.values()[pick];
 	}
 
 }
